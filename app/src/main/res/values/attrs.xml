@@ -1,0 +1,12 @@
+<resources>
+    <declare-styleable name="FullscreenAttrs">
+        <attr name="fullscreenBackgroundColor" format="color" />
+        <attr name="fullscreenTextColor" format="color" />
+        <attr name="colorOnPrimary" format="color"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="CustomToolbar">
+        <attr name="layout" format="reference"/>
+    </declare-styleable>
+</resources>

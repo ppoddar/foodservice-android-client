@@ -1,0 +1,34 @@
+[{
+  "sku": "0001",
+  "name": "Vegetarian Thali",
+  "description": "vegetables, chapati/rice",
+  "price": 105,
+  "categories": ["veg"],
+  "image": "images/veg-thali.jpeg"
+},
+  {
+    "sku": "0002",
+    "name": "Non-Vegetarian Thali",
+    "description": "chicken, chapati/rice",
+    "price": 105,
+    "categories": ["non-veg"],
+    "image": "images/non-veg-thali.png"
+  },
+  {
+    "sku": "0003",
+    "name": "Mutton Kasha",
+    "description": "mutton dry cooked with mustard oil",
+    "price": 305,
+    "categories": ["non-veg", "mutton"],
+    "image": "images/non-veg-thali.png"
+  },
+  {
+    "sku": "0004",
+    "name": "chapati",
+    "description": "",
+    "price": 10,
+    "categories": ["roti"],
+    "image": "images/veg-thali.jpeg"
+  }
+
+]

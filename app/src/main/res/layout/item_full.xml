@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?><!-- =============== Item with image and description =================== -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="start"
+        android:gravity="start"
+        android:hint="item name"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="384dp"
+        android:layout_height="384dp"
+        android:layout_below="@id/item_name"
+        android:layout_alignParentStart="true"
+        android:adjustViewBounds="true"
+        android:contentDescription="item image"
+        android:src="@drawable/test_item_image"
+        tools:ignore="HardcodedText" />
+
+
+    <TextView
+        android:id="@+id/item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_image"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="64dp"
+        android:text="\u20B9"
+        android:textSize="12pt"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/item_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_price"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:hint="long description"
+        android:maxLines="4"
+        tools:ignore="HardcodedText" />
+</RelativeLayout>
+

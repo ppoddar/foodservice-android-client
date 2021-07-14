@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- This theme configures the action bar style -->
+<!-- The hiraafood color pallete is Red-Yellow -->
+<!-- The background should be yellowish #F7FD04 -->
+<!-- The text color should be reddish   #FC5404 -->
+
+<!-- The parent theme from Android platform uses different attribute to -->
+<!-- configure the action bar                                           -->
+<!-- The combination below is arrived at with trial and error           -->
+<resources>
+
+
+    <style name="Theme.Toolbar"
+        parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <item name="colorControlNormal">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">@color/colorAccent</item>
+        <item name="android:background">@color/colorPrimary</item>
+
+    </style>
+
+</resources>

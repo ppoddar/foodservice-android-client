@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- https://material.io/components/app-bars-top#theming -->
+
+
+<!-- This view depends heavily on being used as a direct child within a CoordinatorLayout. -->
+<com.google.android.material.appbar.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <!-- AppBarLayout also requires a separate scrolling sibling in order to know when to scroll. -->
+
+    <!-- the material toolbar contains icons/buttons   -->
+    <com.google.android.material.appbar.MaterialToolbar
+        style="@style/Theme.Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:menu="@menu/menu_menu"
+        app:navigationIcon="@drawable/icon_hamburger"
+        app:title="@string/label_menu">
+
+        <!-- TODO: how to position the icons inside a material toolbar? -->
+        <!-- We do not know yet. So a padding is hardcoded to push the  -->
+        <!-- icons right                                                -->
+        <ImageView
+            android:id="@+id/action_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="128dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/icon_search"
+            android:contentDescription="search icon"
+            tools:ignore="HardcodedText" />
+
+        <!-- the number of items on the cart is shown over a cart icon  -->
+        <!-- a TextView is a better solution to draw text over an image -->
+        <!-- The icon is the background of the text view                -->
+        <!-- The number of items in the cart is updated at runtime and  -->
+        <!-- are shown on the right                                     -->
+        <TextView
+            android:id="@+id/action_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_cart"
+            android:contentDescription="cart icon"
+            android:gravity="end"
+            android:paddingEnd="12dp"
+            android:textColor="@android:color/white"
+            tools:ignore="HardcodedText" />
+    </com.google.android.material.appbar.MaterialToolbar>
+</com.google.android.material.appbar.AppBarLayout>
+
